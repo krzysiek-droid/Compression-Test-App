@@ -10,7 +10,7 @@
 - **Reset and Update Functions:** Reset the plot to its initial state or update it with new data or settings.
 
 ## App GUI:
-![App screen.png](App screen.png)
+![app_screen](app_screen.png)
 
 
 ## License:
