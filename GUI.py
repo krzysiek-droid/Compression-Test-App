@@ -189,8 +189,8 @@ class CSVViewer(QWidget):
         try:
             self.trial_info = pd.read_csv(file_path, sep=';', encoding=encoding, nrows=data_start)
             # Wyciągnięcie etykiety próbki
-            sample_initial_width = float(self.trial_info.to_numpy()[0][0].replace(",", '.'))
-            sample_initial_height = float(self.trial_info.to_numpy()[1][0].replace(",", '.'))
+            sample_initial_width = float(self.trial_info.to_numpy()[1][0].replace(",", '.'))
+            sample_initial_height = float(self.trial_info.to_numpy()[2][0].replace(",", '.'))
             sample_name = list(self.trial_info.columns)[1]
             self.sample_info = {'Sample name': sample_name,
                                 'Initial Diameter': sample_initial_width,
